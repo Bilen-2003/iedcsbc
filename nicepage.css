@@ -533,7 +533,7 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
 }
 
 /*end-commonstyles library*/
-@charset "UTF-8";
+/*@charset "UTF-8";*/
 
 .u-hidden-block {
   visibility: hidden !important;
