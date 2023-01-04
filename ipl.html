@@ -105,16 +105,36 @@
             RIT</small>
         </h3>
       </div>
-      <button class="card__btn">Learn More</button>
+      <button class="card__btn ct-1">Learn More</button>
+      <div class="cm-1">
+        <div class="modal">
+          <img src="images/545682.png" alt="close" class="cl-1">
+          <p>Howdy Innovators!!
+
+            IEDC SBC in association with IEDC RIT brings you 3D Workshop with hands on experience, live printing and
+            much more fun
+            activities, all from scratch. Grab your seats now!! Registration closes soon!!</p>
+          <a href="https://bit.ly/iedc-sbc-ideathon22">❖ REGISTRATION LINK🔗⭕</a>
+        </div>
+      </div>
 
     </div>
 
     <div class="card">
       <img class="card__banner" src="images/ideathon.jpeg" alt="3D Printing Workshop">
       <h3 class="card__title">💡 IDEATHON' 22 💡</h3>
-      <button class="card__btn">Learn More</button>
+      <button class="card__btn ct-2">Learn More</button>
+      <div class="cm-2">
+        <div class="modal">
+          <img src="images/545682.png" alt="close" class="cl-2">
+          <p>Do you have an IDEA that might solve a potential problem? Or an innovation that can make life easy?
+            Bring out your creative idea and win attractive prizes.</p>
+          <a href="https://bit.ly/iedc-sbc-ideathon22">❖ REGISTRATION LINK🔗⭕</a>
+        </div>
+      </div>
     </div>
-    <div class="card">
+
+    <!--<div class="card">
       <img class="card__banner" src="images/3d_print.jpeg" alt="3D Printing Workshop">
       <h3 class="card__title">3D Printing Workshop <br><small style="display:block;text-align: center;">IEDC SBC & IEDC
           RIT</small>
@@ -133,7 +153,7 @@
           RIT</small>
       </h3>
       <button class="card__btn">Learn More</button>
-    </div>
+    </div>-->
 
   </div>
 
@@ -143,17 +163,7 @@
       <p class="u-small-text u-text u-text-variant u-text-1">IEDC @ SBC. 2022 - present </p>
     </div>
   </footer>
-  <!--<section class="u-backlink u-clearfix u-grey-80">
-        <a class="u-link" href="https://nicepage.com/website-design" target="_blank">
-          <span>Website Design</span>
-        </a>
-        <p class="u-text">
-          <span>created with</span>
-        </p>
-        <a class="u-link" href="https://nicepage.cc" target="_blank">
-          <span>Website Builder</span>
-        </a>.
-      </section>-->
+
   <span
     style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 20px; bottom: 30px; padding: 15px; background-image: none;"
     class="u-back-to-top u-border-2 u-border-palette-1-base u-icon u-icon-circle u-opacity u-opacity-85 u-palette-1-base"
@@ -167,6 +177,39 @@
     </svg>
   </span>
 
+
+  <script>
+    const btn1 = document.querySelector('.ct-1')
+    const closebtn1 = document.querySelector('.cl-1')
+    const btn2 = document.querySelector('.ct-2')
+    const closebtn2 = document.querySelector('.cl-2')
+
+    btn1.addEventListener('click', (e) => {
+      var elm = e.target.nextElementSibling
+      elm.classList.add('active')
+      elm.firstElementChild.classList.add('active')
+    })
+
+    closebtn1.addEventListener('click', (e) => {
+      var elm = e.target.parentElement
+      elm.classList.remove('active')
+      elm.parentElement.classList.remove('active')
+    })
+
+    btn2.addEventListener('click', (e) => {
+      var elm = e.target.nextElementSibling
+      elm.classList.add('active')
+      elm.firstElementChild.classList.add('active')
+    })
+
+    closebtn2.addEventListener('click', (e) => {
+      var elm = e.target.parentElement
+      elm.classList.remove('active')
+      elm.parentElement.classList.remove('active')
+    })
+
+
+  </script>
 </body>
 
 </html>
