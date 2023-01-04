@@ -134,6 +134,23 @@
       </div>
     </div>
 
+    <div class="card">
+      <img class="card__banner" src="images/i-talk-women.jpg" alt="3D Printing Workshop">
+      <h3 class="card__title">i-talk : The Startup Journey</h3>
+      <button class="card__btn ct-3">Learn More</button>
+      <div class="cm-3">
+        <div class="modal">
+          <img src="images/545682.png" alt="close" class="cl-3">
+          <p>IEDC SBC in association with Women Cell, SBC and IEDC ASSUMPTION COLLEGE; brings to you an i-talk ' The
+            Startup Journey' Take insights from Sariga T.S , the founder and CEO of Nexpression , who's going to
+            deliver the talk.</p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd1tYamPWlWv0bRLWw63vf1hggJQeMOwLE05Be-KcJqxXPFMw/viewform?usp=sf_link">❖
+            REGISTRATION LINK🔗⭕</a>
+        </div>
+      </div>
+    </div>
+
     <!--<div class="card">
       <img class="card__banner" src="images/3d_print.jpeg" alt="3D Printing Workshop">
       <h3 class="card__title">3D Printing Workshop <br><small style="display:block;text-align: center;">IEDC SBC & IEDC
@@ -183,6 +200,8 @@
     const closebtn1 = document.querySelector('.cl-1')
     const btn2 = document.querySelector('.ct-2')
     const closebtn2 = document.querySelector('.cl-2')
+    const btn3 = document.querySelector('.ct-3')
+    const closebtn3 = document.querySelector('.cl-3')
 
     btn1.addEventListener('click', (e) => {
       var elm = e.target.nextElementSibling
@@ -203,6 +222,18 @@
     })
 
     closebtn2.addEventListener('click', (e) => {
+      var elm = e.target.parentElement
+      elm.classList.remove('active')
+      elm.parentElement.classList.remove('active')
+    })
+
+    btn3.addEventListener('click', (e) => {
+      var elm = e.target.nextElementSibling
+      elm.classList.add('active')
+      elm.firstElementChild.classList.add('active')
+    })
+
+    closebtn3.addEventListener('click', (e) => {
       var elm = e.target.parentElement
       elm.classList.remove('active')
       elm.parentElement.classList.remove('active')
