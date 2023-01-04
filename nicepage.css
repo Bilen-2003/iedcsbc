@@ -45698,6 +45698,28 @@ blockquote {
   font-size: 1.25rem;
 }
 
+/*@media (max-width:768px) {
+  .u-header .u-logo-image-2 {
+    width: 500%;
+    height: 100%;
+  }
+}
+
+@media (max-width:468px) {
+  .u-header .u-logo-image-2 {
+    width: 300%;
+    height: 100%;
+
+  }
+}
+
+@media (max-width:368px) {
+  .u-header .u-logo-image-2 {
+    width: 200%;
+    height: 100%;
+  }
+}*/
+
 @media (max-width: 1199px) {
   .u-header .u-menu-1 {
     width: auto;
