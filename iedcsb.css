@@ -69,7 +69,8 @@
  }
 
  .u-section-1 .u-image-1 {
-   width: 212px;
+   display: flex;
+   /*width: 212px;*/
    height: 212px;
    --animation-custom_in-translate_x: -300px;
    --animation-custom_in-translate_y: 0px;

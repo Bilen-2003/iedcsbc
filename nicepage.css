@@ -1517,7 +1517,7 @@ a {
 }
 
 .u-image.u-logo img {
-  display: block;
+  /*display: block;*/
 }
 
 .u-form-horizontal {
@@ -24635,7 +24635,7 @@ a.pswp__share--download:hover {
 
   to {
     transform-origin: center center;
-    transform: translate3d(-50% !important -50% !important, 0);
+    transform: translate3d(-50%, -50%, 0) !important;
     opacity: 1;
   }
 }
@@ -24643,7 +24643,7 @@ a.pswp__share--download:hover {
 @keyframes customAnimationOut {
   from {
     transform-origin: center center;
-    transform: translate3d(-50% !important, -50% !important, 0);
+    transform: translate3d(-50%, -50%, 0) !important;
     opacity: 1;
   }
 
@@ -45663,6 +45663,11 @@ blockquote {
   min-height: 80px;
 }
 
+.u-header .u-logo-image-3 {
+  height: 100%;
+  max-width: 100%;
+}
+
 .u-header .u-image-1 {
   width: 64px;
   height: 32px;
@@ -45671,6 +45676,12 @@ blockquote {
 
 .u-header .u-logo-image-1 {
   width: 100%;
+  height: 100%;
+  margin-left: 1rem;
+}
+
+.u-header .u-logo-image-2 {
+  width: 350%;
   height: 100%;
 }
 
